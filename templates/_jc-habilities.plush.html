@@ -1,0 +1,17 @@
+<%= for (hability) in habilities { %>
+    <div class="col-md-3 habilities-container text-center">
+        <div class="row">
+            <div class="col-md-12 lil-separation">
+                <img src="<%= hability.Image %>" class="img-fluid" alt="Responsive image" />
+            </div>
+            <div class="col-md-12">
+                <h4 class="colorW lil-separation">
+                    <%= hability.Name %>
+                </h4>
+                <p class="colorW lil-separation">
+                    <%= hability.Description %>
+                </p>
+            </div>
+        </div>
+    </div>
+<% } %>

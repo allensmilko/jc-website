@@ -50,19 +50,44 @@ func HomeHandler(c buffalo.Context) error {
 	]`
 
 	var projects []websitestructs.Project
-	fmt.Println("TEST---------AAA-----------")
-
-	fmt.Printf("%#v", projects)
-
 	json.Unmarshal([]byte(buf), &projects)
+	c.Set("projects", projects)
+
+	bufHab := `[
+		{
+			"name": "UX - UI Design",
+			"image": "assets/images/ux.png",
+			"description": "Design of differents types of digital platforms."
+		},
+		{
+			"name": "Brand Identity",
+			"image": "assets/images/brand.png",
+			"description": "Creation of all the DNA of a newborn brand."
+		},
+		{
+			"name": "Editorial Design",
+			"image": "assets/images/editorial.png",
+			"description": "Books, magazines and also all kind of print stuff."
+		},
+		{
+			"name": "Video & Animation",
+			"image": "assets/images/video-icon.png",
+			"description": "Motion graphics and video edition for your brand."
+		}
+	]`
+
+	var habilities []websitestructs.Hability
+	json.Unmarshal([]byte(bufHab), &habilities)
+	c.Set("habilities", habilities)
+
 	fmt.Println("TEST--------------------")
 
-	fmt.Printf("Birds : %+v", projects)
+	fmt.Printf("Birds : %+v", habilities)
 
 	c.Set("currentBanner", "assets/images/home-banner.png")
 	c.Set("profileImage", "assets/images/profile.png")
 	c.Set("portFoliotitle", "Portfolio")
-	c.Set("projects", projects)
+	c.Set("habilitiesTitle", "Habilidades")
 
 	return c.Render(http.StatusOK, r.HTML("index.html"))
 }
