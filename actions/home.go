@@ -17,35 +17,35 @@ func HomeHandler(c buffalo.Context) error {
 	buf := `[
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-1.png"
+			"image": "assets/images/pg-1.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-2.png"
+			"image": "assets/images/pg-2.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-3.png"
+			"image": "assets/images/pg-3.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-4.png"
+			"image": "assets/images/pg-4.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-5.png"
+			"image": "assets/images/pg-5.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-6.png"
+			"image": "assets/images/pg-6.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-7.png"
+			"image": "assets/images/pg-7.jpg"
 		},
 		{
 			"name": "Creation of all the DNA of a new born brand.",
-			"image": "assets/images/pg-8.png"
+			"image": "assets/images/pg-8.jpg"
 		}
 	]`
 
